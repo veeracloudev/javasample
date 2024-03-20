@@ -32,8 +32,8 @@ pipeline{
                     nexusArtifactUploader(
                     nexusVersion: 'nexus3',
                     protocol: 'http',
-                    groupId:'QA'
-                    nexusUrl: 'http://13.51.157.157:8081/',
+                    groupId:'QA',
+                    nexusUrl:'http://13.51.157.157:8081',
                     version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
                     repository:'vprofile-release',
                     credentialsId:'nexuslogin',
