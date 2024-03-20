@@ -38,7 +38,7 @@ pipeline{
                     repository: 'project-release',
                     credentialsId: 'nexuslogin',
                     artifacts: [
-                                [artifactId:VProfile ,
+                                [artifactId:'VProfile',
                                 classifier: '',
                                 file: "target/VProfile-1.0.war",
                                 type: "war"]
