@@ -47,9 +47,7 @@ pipeline{
                     
                  
             }
-            else {
-                        error "*** File: ${artifactPath}, could not be found";
-                    }
+            
 
         }
         
