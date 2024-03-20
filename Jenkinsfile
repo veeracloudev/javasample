@@ -33,7 +33,7 @@ pipeline{
                     nexusVersion: 'nexus3',
                     protocol: 'http',
                     groupId:'QA',
-                    nexusUrl:'http://13.51.157.157:8081',
+                    nexusUrl:'13.51.157.157:8081',
                     version:"${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
                     repository:'vprofile-repo',
                     credentialsId:'nexuslogin',
