@@ -40,13 +40,16 @@ pipeline{
                     artifacts:[
                                 [artifactId:'VProfile',
                                 classifier: '',
-                                file: "pom.xml",
+                                file: "target/VProfile-1.0.war",
                                 type: "war"]
                             ]
-                     )
+                     );
                     
                  
             }
+            else {
+                        error "*** File: ${artifactPath}, could not be found";
+                    }
 
         }
         
