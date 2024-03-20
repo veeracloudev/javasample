@@ -10,7 +10,7 @@ pipeline{
         {
            steps
             {
-                 git url: 'https://github.com/vignesh810/profile.git', branch: 'main'
+                 git url: 'https://github.com/veeracloudev/javasample.git', branch: 'main'
                  sh 'ls -l'
             }
 
