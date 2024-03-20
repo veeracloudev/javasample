@@ -35,7 +35,7 @@ pipeline{
                     nexusUrl: 'http://13.51.157.157:8081/',
                     groupId: 'QA',
                     version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
-                    repository: 'project-release',
+                    repository: 'vprofile-release',
                     credentialsId: 'nexuslogin',
                     artifacts: [
                                 [artifactId:'VProfile',
