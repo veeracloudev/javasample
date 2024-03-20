@@ -7,7 +7,7 @@
     <version>1.0</version>
     <name>Visualpathit VProfile Webapp</name>
     <url>http://maven.apache.org</url>
-    <properties>
+    <properties> 
         <spring.version>4.2.0.RELEASE</spring.version>
         <spring-security.version>4.0.2.RELEASE</spring-security.version>
         <spring-data-jpa.version>1.8.2.RELEASE</spring-data-jpa.version>
@@ -132,28 +132,7 @@
                     </webApp>
                 </configuration>
             </plugin>
-		<!-- CODE COVERAGE -->
-		    <plugin>
-		        <groupId>org.jacoco</groupId>
-		        <artifactId>jacoco-maven-plugin</artifactId>
-		        <version>0.7.2.201409121644</version>
-		        <executions>
-		            <execution>
-		                <id>jacoco-initialize</id>
-		                <phase>process-resources</phase>
-		                <goals>
-		                    <goal>prepare-agent</goal>
-		                </goals>
-		            </execution>
-		            <execution>
-		                <id>jacoco-site</id>
-		                <phase>post-integration-test</phase>
-		                <goals>
-		                    <goal>report</goal>
-		                </goals>
-		            </execution>
-		        </executions>
-		</plugin>
+		
         </plugins>
     </build>
 </project>
