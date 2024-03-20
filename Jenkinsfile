@@ -40,7 +40,7 @@ pipeline{
                     artifacts:[
                                 [artifactId:'VProfile',
                                 classifier: '',
-                                file: "target/VProfile-1.0.war",
+                                file: "pom.xml",
                                 type: "war"]
                             ]
                      )
